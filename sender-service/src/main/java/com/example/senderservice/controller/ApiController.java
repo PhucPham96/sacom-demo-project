@@ -4,17 +4,16 @@ package com.example.senderservice.controller;
 import com.example.senderservice.dao.SenderDao;
 import com.example.senderservice.dto.TransactionDto;
 import com.example.senderservice.service.ApiService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequiredArgsConstructor
 @RequestMapping(value = "/api")
 public class ApiController {
-    @Autowired
-    private ApiService apiService;
+    final ApiService apiService;
 
-    @Autowired
-    private SenderDao senderDao;
+    final SenderDao senderDao;
 
     @GetMapping(value = "/getAllUser")
     public <T> T getAllUser() {

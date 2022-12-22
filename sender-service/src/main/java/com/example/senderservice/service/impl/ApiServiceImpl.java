@@ -9,6 +9,7 @@ import com.example.senderservice.repository.TransactionRepository;
 import com.example.senderservice.repository.UserRepository;
 import com.example.senderservice.service.ApiService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,17 +21,15 @@ import java.util.List;
 
 @Slf4j
 @Service
+@RequiredArgsConstructor
 @Transactional(readOnly = true)
 public class ApiServiceImpl implements ApiService {
-    @Autowired
     @Qualifier("customObjectMapper")
-    private ObjectMapper mapper;
+    final ObjectMapper mapper;
 
-    @Autowired
-    private UserRepository userRepository;
+    final UserRepository userRepository;
 
-    @Autowired
-    private TransactionRepository transactionRepository;
+    final TransactionRepository transactionRepository;
 
     @Override
     public List<UserEntity> getAllUser() {
