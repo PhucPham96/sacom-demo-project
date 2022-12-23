@@ -12,6 +12,6 @@ import java.math.BigInteger;
 public class TransactionDto {
     private String transactionId;
     private String accountId;
-    private String recipientId;
-    private BigInteger debitAmount;
+    private String transferId;
+    private BigInteger creditAmount;
 }

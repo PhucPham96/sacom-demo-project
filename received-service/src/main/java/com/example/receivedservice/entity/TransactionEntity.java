@@ -29,11 +29,11 @@ public class TransactionEntity implements Serializable {
     @Column(name = "account_id")
     private String accountId;
 
-    @Column(name = "recipient_id")
-    private String recipientId;
+    @Column(name = "transfer_id")
+    private String transferId;
 
-    @Column(name = "debit_amount")
-    private BigInteger debitAmount;
+    @Column(name = "credit_amount")
+    private BigInteger creditAmount;
 
     @Column(name = "status")
     private Status status;
@@ -41,11 +41,11 @@ public class TransactionEntity implements Serializable {
     @Column(name = "create_at")
     private LocalDateTime createAt;
 
-    public TransactionEntity(String accountId, String recipientId, BigInteger debitAmount, String transactionId) {
+    public TransactionEntity(String accountId, String transferId, BigInteger creditAmount, String transactionId) {
         this.transactionId = transactionId;
         this.accountId = accountId;
-        this.recipientId = recipientId;
-        this.debitAmount = debitAmount;
+        this.transferId = transferId;
+        this.creditAmount = creditAmount;
         this.status = Status.SUCCESS;
         this.createAt = LocalDateTime.now();
     }

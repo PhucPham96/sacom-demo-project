@@ -25,14 +25,9 @@ public class ApiController {
         return (T) apiService.getAllTransaction();
     }
 
-    @PostMapping(value = "/deduct")
-    public void deduct(@RequestBody TransactionDto dto) throws Exception {
-        apiService.deduct(dto);
-    }
-
-    @PostMapping(value = "/refund")
-    public void refund(@RequestBody TransactionDto dto) throws Exception {
-        apiService.refund(dto);
+    @PostMapping(value = "/credit")
+    public void credit(@RequestBody TransactionDto dto) throws Exception {
+        apiService.credit(dto);
     }
 
     @PostMapping(value = "/createNativeQuery")

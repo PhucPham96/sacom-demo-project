@@ -9,8 +9,6 @@ import java.util.List;
 
 public interface ApiService {
     List<UserEntity> getAllUser();
-    UserEntity findUserByAccountId(String accountId);
-    void deduct(TransactionDto dto) throws CommonException;
+    void credit(TransactionDto dto) throws CommonException;
     List<TransactionEntity> getAllTransaction();
-    void refund(TransactionDto dto) throws CommonException;
 }
