@@ -1,4 +1,4 @@
-package com.example.senderservice.configuration;
+package com.example.receivedservice.configuration;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;

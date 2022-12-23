@@ -1,13 +1,13 @@
-package com.example.senderservice.service.impl;
+package com.example.receivedservice.service.impl;
 
-import com.example.senderservice.configuration.exception.CommonException;
-import com.example.senderservice.dto.TransactionDto;
-import com.example.senderservice.entity.TransactionEntity;
-import com.example.senderservice.entity.UserEntity;
-import com.example.senderservice.enumerator.Status;
-import com.example.senderservice.repository.TransactionRepository;
-import com.example.senderservice.repository.UserRepository;
-import com.example.senderservice.service.ApiService;
+import com.example.receivedservice.configuration.exception.CommonException;
+import com.example.receivedservice.dto.TransactionDto;
+import com.example.receivedservice.entity.TransactionEntity;
+import com.example.receivedservice.entity.UserEntity;
+import com.example.receivedservice.enumerator.Status;
+import com.example.receivedservice.repository.TransactionRepository;
+import com.example.receivedservice.repository.UserRepository;
+import com.example.receivedservice.service.ApiService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

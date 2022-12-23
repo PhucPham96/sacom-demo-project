@@ -1,4 +1,4 @@
-package com.example.senderservice.dto;
+package com.example.receivedservice.dto;
 
 import lombok.*;
 

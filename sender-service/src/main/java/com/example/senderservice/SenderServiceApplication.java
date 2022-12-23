@@ -22,11 +22,9 @@ public class SenderServiceApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 //        RandomUtils.nextInt()
-        UserEntity user1 = new UserEntity("1001", "Nguyễn Văn A", BigInteger.valueOf(10000000));
-        UserEntity user2 = new UserEntity("1002", "Nguyễn Văn B", BigInteger.valueOf(10000000));
-        UserEntity user3 = new UserEntity("1003", "Nguyễn Văn C", BigInteger.valueOf(10000000));
+        UserEntity user1 = new UserEntity("SEN001", "SE1", BigInteger.valueOf(10000000));
+        UserEntity user2 = new UserEntity("SEN002", "SE2", BigInteger.valueOf(10000000));
         userRepository.save(user1);
         userRepository.save(user2);
-        userRepository.save(user3);
     }
 }

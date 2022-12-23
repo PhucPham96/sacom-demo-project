@@ -1,6 +1,6 @@
-package com.example.senderservice.repository;
+package com.example.receivedservice.repository;
 
-import com.example.senderservice.entity.TransactionEntity;
+import com.example.receivedservice.entity.TransactionEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

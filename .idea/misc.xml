@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/orchestrator-service" />
+    <file type="web" url="file://$PROJECT_DIR$/received-service" />
     <file type="web" url="file://$PROJECT_DIR$/receiver-service" />
     <file type="web" url="file://$PROJECT_DIR$/sender-service" />
   </component>

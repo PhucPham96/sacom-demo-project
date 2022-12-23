@@ -1,6 +1,6 @@
-package com.example.senderservice.entity;
+package com.example.receivedservice.entity;
 
-import com.example.senderservice.enumerator.Status;
+import com.example.receivedservice.enumerator.Status;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 

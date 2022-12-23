@@ -53,7 +53,7 @@ services:
       context: receiver-service
       dockerfile: Dockerfile
     container_name: receiver-service
-    image: receiver-service:latest
+    image: receiver-service:sacom
     ports:
       - "9092:9092"
     environment:
@@ -64,7 +64,7 @@ services:
       context: sender-service
       dockerfile: Dockerfile
     container_name: sender-service
-    image: sender-service:latest
+    image: sender-service:sacom
     ports:
       - "9091:9091"
     environment:
